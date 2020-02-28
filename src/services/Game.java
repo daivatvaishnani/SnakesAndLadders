@@ -35,6 +35,10 @@ public class Game {
 
 	private int movePlayer(Player player, int moves) {
 		int currentPosition = playerPositions.get(player.getName());
+		if(currentPosition + moves > 100) {
+			// player cannot make the move
+			return currentPosition;
+		}
 		int finalPosition = move(currentPosition + moves);
 		playerPositions.put(player.getName(), finalPosition);
 		return finalPosition;
