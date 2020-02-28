@@ -1,6 +1,6 @@
-##Snakes and Ladders
+## Snakes and Ladders
 
-###Requirements
+### <u>Requirements</u>
 
 Create a snake and ladder application. The application should take as input (from the command line or a file):
 
