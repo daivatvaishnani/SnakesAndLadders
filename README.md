@@ -11,17 +11,17 @@ Create a snake and ladder application. The application should take as input (fro
 After taking these inputs, you should print all the moves in the form of the current player name followed by a random number between 1 to 6 denoting the die roll and the initial and final position based on the move.
 Format: <player_name> rolled a <dice_value> and moved from <initial_position> to <final_position>
 
-When someone wins the game, print that the player won the game.
-Format: <player_name> wins the game
+When someone wins the snakeAndLadderService, print that the player won the snakeAndLadderService.
+Format: <player_name> wins the snakeAndLadderService
 
-### Rules of the game
+### Rules of the snakeAndLadderService
 
 * The board will have 100 cells numbered from 1 to 100.
-* The game will have a six sided dice numbered from 1 to 6 and will always give a random number on rolling it.
+* The snakeAndLadderService will have a six sided dice numbered from 1 to 6 and will always give a random number on rolling it.
 * Each player has a piece which is initially kept outside the board (i.e., at position 0).
 * Each player rolls the dice when their turn comes.
 * Based on the dice value, the player moves their piece forward that number of cells. Ex: If the dice value is 5 and the piece is at position 21, the player will put their piece at position 26 now (21+5).
-* A player wins if it exactly reaches the position 100 and the game ends there.
+* A player wins if it exactly reaches the position 100 and the snakeAndLadderService ends there.
 * After the dice roll, if a piece is supposed to move outside position 100, it does not move.
 * The board also contains some snakes and ladders.
 * Each snake will have its head at some number and its tail at a smaller number.
@@ -31,5 +31,5 @@ Format: <player_name> wins the game
 * There could be another snake/ladder at the tail of the snake or the end position of the ladder and the piece should go up/down accordingly.
 * There won’t be a snake at 100.
 * There won’t be multiple snakes/ladders at the same start/head point.
-* It is possible to reach 100, i.e., it is possible to win the game.
+* It is possible to reach 100, i.e., it is possible to win the snakeAndLadderService.
 * Snakes and Ladders do not form an infinite loop.
