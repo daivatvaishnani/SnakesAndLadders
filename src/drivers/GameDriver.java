@@ -34,6 +34,5 @@ public class GameDriver {
 		}
 		SnakeAndLadderService snakeAndLadderService = new SnakeAndLadderService(snakes, ladders, players);
 		snakeAndLadderService.startGame();
-		int a = 10;
 	}
 }
