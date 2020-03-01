@@ -3,6 +3,7 @@ package drivers;
 import models.Ladder;
 import models.Player;
 import models.Snake;
+import models.SnakeAndLadderBoard;
 import services.SnakeAndLadderService;
 
 import java.util.ArrayList;
@@ -32,7 +33,8 @@ public class GameDriver {
 			String name = sc.next();
 			players.add(new Player(name));
 		}
-		SnakeAndLadderService snakeAndLadderService = new SnakeAndLadderService(snakes, ladders, players);
+		SnakeAndLadderBoard snakeAndLadderBoard = new SnakeAndLadderBoard(snakes, ladders, players);
+		SnakeAndLadderService snakeAndLadderService = new SnakeAndLadderService(snakeAndLadderBoard);
 		snakeAndLadderService.startGame();
 	}
 }
