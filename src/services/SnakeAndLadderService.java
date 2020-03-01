@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 public class SnakeAndLadderService {
 	private static final Integer WINNING_POSITION = 100;
-	private static final Integer STARTING_POSTION = 0;
+	private static final Integer STARTING_POSITION = 0;
 
 	private SnakeAndLadderBoard snakeAndLadderBoard;
 
@@ -46,7 +46,7 @@ public class SnakeAndLadderService {
 			playerPositions = new HashMap<>();
 		}
 		for (Player player : snakeAndLadderBoard.getPlayers()) {
-			playerPositions.put(player.getName(), STARTING_POSTION);
+			playerPositions.put(player.getName(), STARTING_POSITION);
 		}
 	}
 
